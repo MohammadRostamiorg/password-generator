@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Creativity House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div class="generator">'
+                <h2>
+                    Choose the options that you want to be in yor password
+                </h2>
+
+                <div id="options">
+                    <div class="row">
+                        <label for="">
+                            How Many characters must have the password ?
+                        </label>
+                        <input id="passCount" value="8" type="number" min="8" max="255">
+                    </div>
+
+
+                    <div class="row">
+                        <label for="">
+                            Using Special Characters in password?
+                        </label>
+                        <input id="specialCharacters" type="checkbox">
+                    </div>
+
+
+                    <div class="row">
+                        <label for="">
+                            Use Capital Letters in password?
+                        </label>
+                        <input id="capitalCase" type="checkbox">
+                    </div>
+
+
+                    <div class="row">
+                        <label for="">
+                            Use Lowercase Letters in password?
+                        </label>
+                        <input id="lowerCase" type="checkbox">
+                    </div>
+
+
+                    <div class="row">
+                        <button id="generateBtn">
+                            Generate!
+                        </button>
+                    </div>
+                   
+                </div>
+        </div>
+
+
+
+        <div class="password">
+            <h2>
+                Your password :
+            </h2>
+
+
+            <div class="row">
+                <input id="generatedPassword" type="text" disabled>
+                <button id="copyBtn">copy</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

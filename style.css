@@ -1,0 +1,104 @@
+body {
+    background-color: #eee;
+}
+
+#container {
+    width: 80lvw;
+    height: 70lvh;
+    box-shadow: 0 0 10px #38383848;
+    border-radius: 25px;
+    margin: 100px auto;
+    display: flex;
+    background-color: #fff;
+
+}
+
+#container>div {
+    flex: 1;
+    overflow: auto;
+}
+
+.generator {
+    border-right: 1px solid #38383848;
+}
+
+:is(.generator, .password) h2 {
+    font-size: 25px;
+    padding: 5px;
+    color: #474747;
+    text-align: center;
+    border-bottom: 1px solid #38383848;
+    display: block;
+}
+
+.row {
+    padding: 10px 25px;
+}
+
+.row input {
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 2px #aaa;
+    margin-top: 5px;
+}
+
+.row input[type=number] {
+    width: 80%;
+}
+
+.row input[type=checkbox] {
+    width: 20px;
+    vertical-align: middle;
+}
+
+#generateBtn {
+    width: 100px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    background: #1080b4;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#generateBtn:hover {
+    background: #0086c4;
+}
+
+#generatedPassword {
+    width: 85%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 1.5em;
+}
+
+
+#copyBtn {
+    line-height: 50px;
+    background: #1080b4;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 10%;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#copyBtn:hover {
+    background: #0086c4;
+}
+
+@media screen and (max-width : 760px) {
+    #container {
+        flex-direction: column;
+    }
+
+    .generator {
+        height: 500px;
+    }
+}
